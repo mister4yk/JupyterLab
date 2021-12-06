@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  nextcloud:
+    build:
+      context: .
+      target: jupyter
+    image: jupyter
+    restart: always
+    ports:
+      - 8093:80
+    volumes:
+      - /srv/data:/var/www/html/data
+      - /etc/localtime:/etc/localtime:ro
+    networks:
+      - jupyter
+networks:
+  jupyter: {}
