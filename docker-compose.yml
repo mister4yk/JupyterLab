@@ -1,9 +1,8 @@
 version: "3.7"
 services:
   nextcloud:
-    build:
-      context: .
-    image: jupyter
+    build: .
+    image: jupyter-custom
     restart: always
     ports:
       - 8093:80
