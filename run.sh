@@ -1,2 +1,4 @@
 #!/bin/bash
-docker-compose up
+docker-compose up -d
+sleep 10
+docker-compose logs
