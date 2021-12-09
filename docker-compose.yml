@@ -5,7 +5,7 @@ services:
     image: jupyter-custom
     restart: always
     ports:
-      - 65333:8888
+      - 8888:8888
     volumes:
       - ./data/notebook:/opt/jupyter/notebook
       - ./data/runtime:/opt/jupyter/.local/share/jupyter/runtime/
